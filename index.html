@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lucky</title>
-        <link rel="stylesheet" href="./resources/css/index.css">
-    </head>
-    <body>
-        <h1>You have reached the Gallery of Lucky. Please enjoy cute doggo pics. (Work in progress)</h1>
-        <img id="MainPicture" src="Deckelsmouk4.github.io/images/Pics 188.JPG" alt="">
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery of Lucky</title>
+    <link rel="stylesheet" href="resources/css/index.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+
+    <header>
+        <h1>Gallery of Lucky</h1>
+    </header>
+
+    <main>
+        <section id="youngLucky">
+            <h2>Young Lucky</h2>
+            <div class="gallery">
+                <img src="../images/young1.JPG" alt="Young Lucky 1" onclick="openModal(this)">
+                <img src="../images/young2.JPG" alt="Young Lucky 2" onclick="openModal(this)">
+                <img src="../images/young3.JPG" alt="Young Lucky 3" onclick="openModal(this)">
+                <img src="../images/young4.JPG" alt="Young Lucky 3" onclick="openModal(this)">
+                <img src="../images/young5.JPG" alt="Young Lucky 3" onclick="openModal(this)">
+                <img src="../images/young6.JPG" alt="Young Lucky 3" onclick="openModal(this)">
+                <img src="../images/young7.JPG" alt="Young Lucky 3" onclick="openModal(this)">
+                <img src="../images/young8.JPG" alt="Young Lucky 3" onclick="openModal(this)">
+            </div>
+        </section>
+
+        <section id="middleAgedLucky">
+            <h2>Middle Aged Lucky</h2>
+            <div class="gallery">
+                <img src="../images/Middle1.JPG" alt="Middle Aged Lucky 1" onclick="openModal(this)">
+                <img src="../images/Middle2.JPG" alt="Middle Aged Lucky 2" onclick="openModal(this)">
+                <img src="../images/Middle3.JPG" alt="Middle Aged Lucky 3" onclick="openModal(this)">
+                <img src="../images/Middle4.JPG" alt="Middle Aged Lucky 4" onclick="openModal(this)">
+                <img src="../images/Middle5.JPG" alt="Middle Aged Lucky 5" onclick="openModal(this)">
+                <img src="../images/Middle6.JPG" alt="Middle Aged Lucky 6" onclick="openModal(this)">
+                <img src="../images/Middle7.JPG" alt="Middle Aged Lucky 7" onclick="openModal(this)">
+                <img src="../images/middle8.JPG" alt="Middle Aged Lucky 8" onclick="openModal(this)">
+                <img src="../images/tall1.JPG" alt="Middle Aged Lucky 8" onclick="openModal(this)">
+                <img src="../images/tall2.JPG" alt="Middle Aged Lucky 8" onclick="openModal(this)">
+                <img src="../images/tall3.JPG" alt="Middle Aged Lucky 8" onclick="openModal(this)">
+                <img src="../images/tall4.JPG" alt="Middle Aged Lucky 8" onclick="openModal(this)">
+            </div>
+        </section>
+
+        <section id="seniorLucky">
+            <h2>Senior Lucky</h2>
+            <div class="gallery">
+                <img src="../images/Senior1.jpg" alt="Senior Lucky 1" onclick="openModal(this)">
+                <img src="../images/Senior2.jpg" alt="Senior Lucky 2" onclick="openModal(this)">
+            </div>
+        </section>
+    </main>
+
+    <!-- Fullscreen Modal -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="resources/javascript/scripts.js"></script> <!-- Link to the external JavaScript file -->
+</body>
 </html>
