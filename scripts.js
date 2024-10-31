@@ -10,5 +10,12 @@ function openModal(img) {
 
 function closeModal() {
     const modal = document.getElementById("modal");
-    modal.style.display = "none"; // Hide the modal
+    modal.style.display = "none";
 }
+
+// Close modal on pressing the Esc key
+window.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        closeModal();
+    }
+});
